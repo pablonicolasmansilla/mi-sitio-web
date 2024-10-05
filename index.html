@@ -8,7 +8,7 @@
     <style>
         @font-face {
             font-family: 'Adobe Caslon Pro';
-            src: url('fonts/adobe-caslon-pro.ttf') format('truetype');
+            src: url('/fonts/adobe-caslon-pro.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -16,7 +16,11 @@
         
         body {
             font-family: 'Adobe Caslon Pro', serif;
-            color: #333;
+            color: #975430; /* Color marrón para el contenido */
+        }
+
+        h1, h2, h3, .nav-link {
+            color: #307F97; /* Color azul para títulos */
         }
         
         .smooth-scroll {
@@ -33,18 +37,22 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .nav-link:hover {
+            color: #1d4e5d; /* Versión más oscura del azul para hover */
+        }
     </style>
 </head>
 <body class="smooth-scroll">
     <header class="py-6 px-4 sm:px-6 lg:px-8">
         <nav class="flex justify-between items-center max-w-7xl mx-auto">
             <h1 class="text-2xl sm:text-3xl">
-                <a href="#" class="hover:text-gray-600 transition-colors">Pablo Nicolas Mansilla</a>
+                <a href="#" class="nav-link transition-colors">Pablo Nicolas Mansilla</a>
             </h1>
             <div class="flex space-x-6">
-                <a href="#about" class="hover:text-gray-600 transition-colors">Sobre mí</a>
-                <a href="#projects" class="hover:text-gray-600 transition-colors">Proyectos</a>
-                <a href="#contact" class="hover:text-gray-600 transition-colors">Contacto</a>
+                <a href="#about" class="nav-link transition-colors">Sobre mí</a>
+                <a href="#projects" class="nav-link transition-colors">Proyectos</a>
+                <a href="#contact" class="nav-link transition-colors">Contacto</a>
             </div>
         </nav>
     </header>
@@ -100,16 +108,16 @@
                     <h2 class="text-3xl mb-6">Contacto</h2>
                     <p class="text-lg mb-6">¿Interesado en colaborar o conocer más sobre mi trabajo? No dudes en contactarme.</p>
                     <div class="flex justify-center space-x-6">
-                        <a href="#" class="text-gray-600 hover:text-gray-900">Twitter</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900">LinkedIn</a>
-                        <a href="#" class="text-gray-600 hover:text-gray-900">GitHub</a>
+                        <a href="#" class="nav-link transition-colors">Twitter</a>
+                        <a href="#" class="nav-link transition-colors">LinkedIn</a>
+                        <a href="#" class="nav-link transition-colors">GitHub</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+    <footer class="py-6 px-4 sm:px-6 lg:px-8 text-center">
         <p>&copy; 2024 Pablo Nicolas Mansilla. Todos los derechos reservados.</p>
     </footer>
 
