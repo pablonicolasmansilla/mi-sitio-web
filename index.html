@@ -3,155 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pablo Nicolás Mansilla - Terapeuta de Bio Decodificación">
-    <title>Pablo Nicolás Mansilla - Bio Decodificación</title>
+    <title>Pablo Nicolas Mansilla</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Crimson Text', serif;
             color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
         }
-        header {
-            background-color: #009688;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
-        header p {
-            font-size: 1.2em;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #009688;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        h2 {
-            color: #009688;
-            font-size: 2em;
-            border-bottom: 2px solid #009688;
-            padding-bottom: 10px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        footer a {
-            color: #009688;
-            text-decoration: none;
-        }
-        .contact-btn {
-            display: inline-block;
-            background-color: #009688;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .contact-btn:hover {
-            background-color: #00796B;
-        }
-        .testimonial {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .testimonial p {
-            font-style: italic;
-        }
-        .testimonial span {
-            font-weight: bold;
-            display: block;
-            margin-top: 5px;
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body>
-
-    <header>
-        <h1>Pablo Nicolás Mansilla</h1>
-        <p>Terapeuta especializado en Bio Decodificación</p>
+<body class="smooth-scroll">
+    <header class="py-6 px-4 sm:px-6 lg:px-8">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <h1 class="text-2xl sm:text-3xl">
+                <a href="#" class="hover:text-gray-600 transition-colors">Pablo Nicolas Mansilla</a>
+            </h1>
+            <div class="flex space-x-6">
+                <a href="#about" class="hover:text-gray-600 transition-colors">Sobre mí</a>
+                <a href="#projects" class="hover:text-gray-600 transition-colors">Proyectos</a>
+                <a href="#contact" class="hover:text-gray-600 transition-colors">Contacto</a>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#biografia">Biografía</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#blog">Blog</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <main>
+        <section class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl sm:text-5xl mb-8">Bio decodificador</h2>
+                <p class="text-xl sm:text-2xl mb-12">Buscando la magia entre líneas de código y creando experiencias digitales únicas.</p>
+                <div class="aspect-w-16 aspect-h-9 mb-12">
+                    <img src="/api/placeholder/800/600" alt="Imagen representativa" class="rounded-lg shadow-lg object-cover">
+                </div>
+            </div>
+        </section>
 
-    <section id="biografia">
-        <h2>Biografía</h2>
-        <p>Hola, soy Pablo Nicolás Mansilla, un terapeuta especializado en Bio Decodificación con años de experiencia ayudando a las personas a entender el vínculo entre las emociones y los síntomas físicos. Mi misión es guiar a mis pacientes a través del proceso de sanación emocional, desbloqueando patrones limitantes y promoviendo un bienestar integral.</p>
-        <a class="contact-btn" href="#contacto">Reserva una sesión</a>
-    </section>
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="max-w-3xl mx-auto">
+                <div class="fade-in">
+                    <h2 class="text-3xl mb-6">Sobre mí</h2>
+                    <p class="text-lg mb-4">Entre el código y la creatividad, encuentro mi pasión por decodificar problemas y transformarlos en soluciones elegantes.</p>
+                    <p class="text-lg">Cada línea de código es una oportunidad para crear algo extraordinario, algo que trascienda lo ordinario y abra nuevas posibilidades.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="testimonios">
-        <h2>Testimonios</h2>
-        <div class="testimonial">
-            <p>"La terapia con Pablo ha cambiado mi vida. Me ayudó a comprender el origen emocional de mis dolencias y a liberarme de bloqueos profundos. ¡Gracias!"</p>
-            <span>- María L.</span>
-        </div>
-        <div class="testimonial">
-            <p>"Nunca había experimentado un proceso tan profundo y liberador. La Bio Decodificación con Pablo me permitió sanar aspectos que llevaba años arrastrando."</p>
-            <span>- Juan P.</span>
-        </div>
-        <div class="testimonial">
-            <p>"Desde la primera sesión sentí una gran conexión y confianza. Pablo es un verdadero profesional que acompaña con empatía y claridad en el proceso."</p>
-            <span>- Andrea G.</span>
-        </div>
-    </section>
+        <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="fade-in">
+                    <h2 class="text-3xl mb-6">Proyectos</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="/api/placeholder/400/300" alt="Proyecto 1" class="w-full">
+                            <div class="p-4">
+                                <h3 class="text-xl mb-2">Proyecto Innovador</h3>
+                                <p>Descripción breve del proyecto y su impacto.</p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="/api/placeholder/400/300" alt="Proyecto 2" class="w-full">
+                            <div class="p-4">
+                                <h3 class="text-xl mb-2">Solución Creativa</h3>
+                                <p>Descripción breve del proyecto y su impacto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Explora artículos sobre Bio Decodificación, sanación emocional y bienestar.</p>
-        <ul>
-            <li><a href="#">¿Qué es la Bio Decodificación y cómo puede ayudarte?</a></li>
-            <li><a href="#">Cómo identificar bloqueos emocionales a través del cuerpo</a></li>
-            <li><a href="#">Beneficios de la Bio Decodificación para el bienestar integral</a></li>
-        </ul>
-    </section>
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="max-w-3xl mx-auto">
+                <div class="fade-in">
+                    <h2 class="text-3xl mb-6">Contacto</h2>
+                    <p class="text-lg mb-6">¿Interesado en colaborar o conocer más sobre mi trabajo? No dudes en contactarme.</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-gray-600 hover:text-gray-900">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">LinkedIn</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-900">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes preguntas o quieres agendar una consulta? Completa el formulario o envíame un mensaje por redes sociales.</p>
-        <ul>
-            <li><a href="https://www.instagram.com/tu_perfil" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/tu_perfil" target="_blank">Facebook</a></li>
-            <li><a href="mailto:tu_correo@example.com">Correo Electrónico</a></li>
-        </ul>
-        <a class="contact-btn" href="#contacto">Contáctame</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Pablo Nicolás Mansilla - Bio Decodificación | <a href="#contacto">Contáctame</a></p>
+    <footer class="py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+        <p>&copy; 2024 Pablo Nicolas Mansilla. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElems = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            fadeElems.forEach(elem => observer.observe(elem));
+        });
+    </script>
 </body>
 </html>
